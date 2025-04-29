@@ -39,9 +39,9 @@ public class Student implements Comparable<Student> {
         // Here, notice carefully: other.gpa comes first, this.gpa comes second.
         // This reverses the normal ascending order, and makes GPA sorted from high to low (descending order).
         // That means:
-        // other.gpa > this.gpa : Return -1 → other comes before this
+        // other.gpa > this.gpa : Return 1 → other comes after this
         // other.gpa == this.gpa : Return 0
-        // other.gpa < this.gpa : Return 1 → this comes before other
+        // other.gpa < this.gpa : Return -1 → this comes before other
         return Double.compare(other.gpa, this.gpa);
     }
 
