@@ -44,4 +44,9 @@ public class Student implements Comparable<Student> {
         // other.gpa < this.gpa : Return 1 → this comes before other
         return Double.compare(other.gpa, this.gpa);
     }
+
+    @Override
+    public String toString(){
+        return name + " (GPA: "+gpa+")";
+    }
 }
